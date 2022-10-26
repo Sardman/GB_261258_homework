@@ -9,14 +9,19 @@
 
     }
 
+    private static string FillString(string a)
+    {
+        return a;
+    }
+
     private static void ParceArray()
     {
 
     }
 
-    private static void ParceString()
+    private static string ParceString(string a)
     {
-
+        return a;
     }
 
     private static void PrintArray()
