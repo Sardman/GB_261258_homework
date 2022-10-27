@@ -36,16 +36,17 @@
 
     private static void PrintArray()
     {
-
+        for(int i = 0; i != array_lenght; i++)
+            Console.WriteLine(text_array[i]);
     }
 
     static void Main()
     {
         FillArray();
-        Console.WriteLine("Массив до обработки: \n");
+        Console.WriteLine("Массив до обработки:");
         PrintArray();
         ParceArray();
-        Console.WriteLine("Массив после обработки: \n");
+        Console.WriteLine("\nМассив после обработки:");
         PrintArray();
     }
 }
