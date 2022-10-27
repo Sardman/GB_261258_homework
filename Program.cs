@@ -26,12 +26,24 @@
 
     private static void ParceArray()
     {
-
+        for (int i = 0; i != array_lenght; i++)
+            text_array[i] = ParceString(text_array[i]);
     }
 
     private static string ParceString(string a)
     {
-        return a;
+        string parced_string = "";
+        for (int i = 0; i != a.Length; i++)
+        {
+            if (!IsNumber(a.Substring(i, 1).ToCharArray()[0]))
+                parced_string += a.Substring(i, 1);
+        }
+        return parced_string;
+    }
+
+    private static bool IsNumber(char a)
+    {
+        return (a >= '0' && a <= '9');
     }
 
     private static void PrintArray()
